@@ -1,0 +1,17 @@
+[Unit]
+Description=G15ctrl Systemdaemon contolling the G15
+Requires=LCDd.service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/g15ctrld
+User=root
+Group=root
+Restart=on-failure
+StandardOutput=file:/var/log/g15ctrl.log
+StandardError=file:/var/log/g15ctrl_error.log
+
+[Install]
+#WantedBy=multi-user.target
+

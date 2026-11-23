@@ -1,0 +1,10 @@
+[Unit]
+Description=Initialize Logitech G15 event handling
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart= /usr/libexec/g15ctrld/g15-event.sh ready
+
+[Install]
+WantedBy=multi-user.target

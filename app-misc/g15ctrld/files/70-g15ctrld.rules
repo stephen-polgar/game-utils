@@ -1,0 +1,6 @@
+# Logitech G15 v2 - LCD hidraw interface
+SUBSYSTEM=="hidraw", KERNEL=="hidraw*", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c223", MODE="0660", GROUP="input", RUN+="/usr/bin/setfacl -m u:nobody:rw %E{DEVNAME}"
+
+# Logitech G15 v2 - Gaming Keys input device
+SUBSYSTEM=="input", KERNEL=="event*", ATTRS{name}=="Logitech Gaming Keyboard Gaming Keys", MODE="0660", GROUP="input"
+
