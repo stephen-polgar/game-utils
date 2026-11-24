@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>game-utils</name>
+    <description>Gentoo overlay with new and fixed utilities for gaming</description>
+    <homepage>https://github.com/stephen-polgar/game-utils</homepage>
+    <owner type="person">
+      <email>polgar.istvan@proton.me</email>
+      <name>Istvan Polgar</name>
+    </owner>
+    <source type="git">https://github.com/stephen-polgar/game-utils.git</source>
+  </repo>
+</repositories>
